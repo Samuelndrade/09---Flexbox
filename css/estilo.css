@@ -61,6 +61,7 @@ nav ul li a:hover {
     background-color: lightgray;
     width: 50%;
     height: 40vh;
+    order: 3;
 }
 
 .footer {
