@@ -3,26 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout com Flexbox</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Página Inicial</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            padding: 10px;
+            background-color: #333;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header, footer {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">01</a></li>
-            <li><a href="page2.html">02</a></li>
-            <li><a href="page3.html">03</a></li>
-            <li><a href="page4.html">04</a></li>
-            <li><a href="page5.html">05</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pagina2.html">Página 2</a></li>
+            <li><a href="pagina3.html">Página 3</a></li>
         </ul>
     </nav>
     
     <div class="container">
-        <header class="header">Cabeçalho</header>
-        <aside class="menu">Menu</aside>
-        <article class="artigo1">Artigo 1</article>
-        <article class="artigo2">Artigo 2</article>
-        <footer class="footer">Rodapé</footer>
+        <header>
+            <h1>Cabeçalho</h1>
+        </header>
+        
+        <main>
+            <p>Bem-vindo à página inicial!</p>
+        </main>
+        
+        <footer>
+            <p>Rodapé</p>
+        </footer>
     </div>
 </body>
 </html>
